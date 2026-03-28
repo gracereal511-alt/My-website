@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Globalmint NFT Marketplace</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f1a;
+      color: white;
+    }
 
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #0f172a;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    header h1 {
+      color: #3b82f6;
+    }
+
+    button {
+      background: #3b82f6;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      color: #60a5fa;
+    }
+
+    .hero p {
+      color: #cbd5f5;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: #3b82f6;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #1e293b;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Globalmint</h1>
+  <button>Connect Wallet</button>
+</header>
+
+<section class="hero">
+  <h2>Discover, Collect & Trade NFTs</h2>
+  <p>The global marketplace for digital art and creativity</p>
+  <button>Explore Marketplace</button>
+</section>
+
+<section class="gallery">
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="NFT">
+    <h3>Abstract Flow</h3>
+    <p class="price">0.5 ETH</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="NFT">
+    <h3>Digital Dreams</h3>
+    <p class="price">1.2 ETH</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="NFT">
+    <h3>Blue Motion</h3>
+    <p class="price">0.8 ETH</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="NFT">
+    <h3>Crypto Vision</h3>
+    <p class="price">2.0 ETH</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Globalmint. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
