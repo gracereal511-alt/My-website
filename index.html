@@ -113,7 +113,7 @@ footer {
 
 <header>
   <h1>Globalmint</h1>
-  <button>Connect Wallet</button>
+  <button onclick="connectWallet()">Connect Wallet</button>
 </header>
 
 <section class="hero">
@@ -161,6 +161,28 @@ footer {
 <footer>
   <p>© 2026 Globalmint. All rights reserved.</p>
 </footer>
+<script>
+async function connectWallet() {
+  if (typeof window.ethereum !== 'undefined') {
+    try {
+      const accounts = await window.ethereum.request({
+        method: 'eth_requestAccounts'
+      });
 
+      const walletAddress = accounts[0];
+
+      alert("Connected: " + walletAddress);
+
+      document.querySelector("button").innerText =
+        walletAddress.substring(0,6) + "..." + walletAddress.slice(-4);
+
+    } catch (error) {
+      alert("Connection failed");
+    }
+  } else {
+    alert("Please install MetaMask!");
+  }
+}
+</script>
 </body>
 </html>
